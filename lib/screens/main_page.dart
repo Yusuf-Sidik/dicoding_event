@@ -25,7 +25,7 @@ class _MainPageState extends State<MainPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Event App'),
+        title: const Text('Dicoding Event App'),
         centerTitle: true,
       ),
       body: _pages[_currentIndex],
