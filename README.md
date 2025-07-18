@@ -28,14 +28,21 @@ Proyek ini dibuat sebagai latihan dalam mengonsumsi API, pengelolaan tema (dark/
 
 ```plaintext
 lib/
+├── models/
+│   └── event.dart
+│
 ├── screens/
-│   ├── upcoming_event.dart
+│   ├── event_detail.dart
 │   ├── finished_event.dart
+│   ├── main_page.dart
 │   ├── search_event.dart
-│   ├── favorite_event.dart
-│   └── setting.dart
+│   ├── setting.dart
+│   └── upcoming_event.dart
+│
 ├── services/
-│   ├── upcoming_event_service.dart
 │   ├── finished_event_service.dart
-│   └── search_event_service.dart
+│   ├── search_event_service.dart
+│   └── upcoming_event_service.dart
+│
 └── main.dart
+```
