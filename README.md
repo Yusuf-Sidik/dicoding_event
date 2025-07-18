@@ -9,7 +9,6 @@ Proyek ini dibuat sebagai latihan dalam mengonsumsi API, pengelolaan tema (dark/
 
 - 🗓️ Menampilkan **Upcoming Event** dan **Finished Event**
 - 🔍 Pencarian event berdasarkan keyword
-- ❤️ Menandai event sebagai **Favorite**
 - 🌙 **Toggle Dark Mode / Light Mode**, dan preferensi tersimpan di local storage
 - 📄 Halaman **Detail Event**
 
