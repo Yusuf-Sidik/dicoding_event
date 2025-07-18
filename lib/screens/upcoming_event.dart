@@ -122,8 +122,7 @@ class _UpcomingEventState extends State<UpcomingEvent> {
   Widget _buildEventSummary(Event event) {
     return Text(
       event.summary,
-      style: TextStyle(
-        color: Colors.grey[600],
+      style: const TextStyle(
         fontSize: 14,
       ),
       maxLines: 3,
@@ -134,12 +133,12 @@ class _UpcomingEventState extends State<UpcomingEvent> {
   Widget _buildEventLocationAndCategory(Event event) {
     return Row(
       children: [
-        Icon(Icons.location_on, size: 16, color: Colors.grey[600]),
+        const Icon(Icons.location_on, size: 16),
         const SizedBox(width: 4),
         Expanded(
           child: Text(
             event.cityName,
-            style: TextStyle(color: Colors.grey[600], fontSize: 12),
+            style: const TextStyle(fontSize: 12),
             overflow: TextOverflow.ellipsis,
           ),
         ),
@@ -170,11 +169,11 @@ class _UpcomingEventState extends State<UpcomingEvent> {
   Widget _buildEventParticipants(Event event) {
     return Row(
       children: [
-        Icon(Icons.people, size: 16, color: Colors.grey[600]),
+        const Icon(Icons.people, size: 16),
         const SizedBox(width: 4),
         Text(
           '${event.registrants}/${event.quota} peserta',
-          style: TextStyle(color: Colors.grey[600], fontSize: 12),
+          style: const TextStyle(fontSize: 12),
         ),
       ],
     );

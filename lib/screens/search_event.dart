@@ -218,8 +218,7 @@ class _SearchEventState extends State<SearchEvent> {
                   const SizedBox(height: 8),
                   Text(
                     event.summary,
-                    style: TextStyle(
-                      color: Colors.grey[600],
+                    style: const TextStyle(
                       fontSize: 14,
                     ),
                     maxLines: 3,
@@ -228,12 +227,14 @@ class _SearchEventState extends State<SearchEvent> {
                   const SizedBox(height: 12),
                   Row(
                     children: [
-                      Icon(Icons.location_on,
-                          size: 16, color: Colors.grey[600]),
+                      const Icon(
+                        Icons.location_on,
+                        size: 16,
+                      ),
                       const SizedBox(width: 4),
                       Text(
                         event.cityName,
-                        style: TextStyle(color: Colors.grey[600], fontSize: 12),
+                        style: const TextStyle(fontSize: 12),
                       ),
                       const Spacer(),
                       Container(
@@ -257,11 +258,11 @@ class _SearchEventState extends State<SearchEvent> {
                   const SizedBox(height: 8),
                   Row(
                     children: [
-                      Icon(Icons.people, size: 16, color: Colors.grey[600]),
+                      const Icon(Icons.people, size: 16),
                       const SizedBox(width: 4),
                       Text(
                         '${event.registrants}/${event.quota} peserta',
-                        style: TextStyle(color: Colors.grey[600], fontSize: 12),
+                        style: const TextStyle(fontSize: 12),
                       ),
                     ],
                   ),
