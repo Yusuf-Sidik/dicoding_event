@@ -6,7 +6,14 @@ import 'package:dicoding_event/screens/upcoming_event.dart';
 import 'package:flutter/material.dart';
 
 class MainPage extends StatefulWidget {
-  const MainPage({super.key});
+  final bool isDarkMode;
+  final ValueChanged<bool> onThemeToggle;
+
+  const MainPage({
+    super.key,
+    required this.isDarkMode,
+    required this.onThemeToggle,
+  });
 
   @override
   State<MainPage> createState() => _MainPageState();
@@ -14,15 +21,20 @@ class MainPage extends StatefulWidget {
 
 class _MainPageState extends State<MainPage> {
   int _currentIndex = 0;
-  final List<Widget> _pages = [
-    const UpcomingEvent(),
-    const FinishedEvent(),
-    const SearchEvent(),
-    const FavoriteEvent(),
-    const Setting(),
-  ];
+
   @override
   Widget build(BuildContext context) {
+    final List<Widget> _pages = [
+      const UpcomingEvent(),
+      const FinishedEvent(),
+      const SearchEvent(),
+      const FavoriteEvent(),
+      Setting(
+        isDarkMode: widget.isDarkMode,
+        onThemeToggle: widget.onThemeToggle,
+      ),
+    ];
+
     return Scaffold(
       appBar: AppBar(
         title: const Text('Dicoding Event App'),
