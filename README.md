@@ -1,16 +1,42 @@
-# dicoding_event
+# 📱 Aplikasi Dicoding Event
 
-A new Flutter project.
+Aplikasi Flutter yang menampilkan daftar event dari API publik.  
+Proyek ini dibuat sebagai latihan dalam mengonsumsi API, pengelolaan tema (dark/light mode), dan navigasi menggunakan `BottomNavigationBar`.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## ✨ Fitur Utama
 
-A few resources to get you started if this is your first Flutter project:
+- 🗓️ Menampilkan **Upcoming Event** dan **Finished Event**
+- 🔍 Pencarian event berdasarkan keyword
+- ❤️ Menandai event sebagai **Favorite**
+- 🌙 **Toggle Dark Mode / Light Mode**, dan preferensi tersimpan di local storage
+- 📄 Halaman **Detail Event**
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 🛠️ Teknologi & Package
+
+- **Flutter** & **Dart**
+- [`http`](https://pub.dev/packages/http) – untuk konsumsi API
+- [`shared_preferences`](https://pub.dev/packages/shared_preferences) – menyimpan preferensi dark mode
+- **StatefulWidget** – untuk pengelolaan state sederhana
+- **BottomNavigationBar** – navigasi antar halaman
+
+---
+
+## 🗂️ Struktur Folder
+
+```plaintext
+lib/
+├── screens/
+│   ├── upcoming_event.dart
+│   ├── finished_event.dart
+│   ├── search_event.dart
+│   ├── favorite_event.dart
+│   └── setting.dart
+├── services/
+│   ├── upcoming_event_service.dart
+│   ├── finished_event_service.dart
+│   └── search_event_service.dart
+└── main.dart
