@@ -24,11 +24,10 @@ class _MainPageState extends State<MainPage> {
 
   @override
   Widget build(BuildContext context) {
-    final List<Widget> _pages = [
+    final List<Widget> pages = [
       const UpcomingEvent(),
       const FinishedEvent(),
       const SearchEvent(),
-      const FavoriteEvent(),
       Setting(
         isDarkMode: widget.isDarkMode,
         onThemeToggle: widget.onThemeToggle,
@@ -40,7 +39,7 @@ class _MainPageState extends State<MainPage> {
         title: const Text('Dicoding Event App'),
         centerTitle: true,
       ),
-      body: _pages[_currentIndex],
+      body: pages[_currentIndex],
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _currentIndex,
         onTap: (index) {
@@ -61,10 +60,6 @@ class _MainPageState extends State<MainPage> {
           BottomNavigationBarItem(
             icon: Icon(Icons.search),
             label: 'Search',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.favorite),
-            label: 'Favorite',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.settings),
