@@ -1,4 +1,3 @@
-import 'package:dicoding_event/screens/favorite_event.dart';
 import 'package:dicoding_event/screens/finished_event.dart';
 import 'package:dicoding_event/screens/search_event.dart';
 import 'package:dicoding_event/screens/setting.dart';
